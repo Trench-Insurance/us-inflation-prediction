@@ -8,7 +8,6 @@ import functions as functions
 LABEL_WIDTH = 1
 WINDOW_SIZE = 2
 
-# 
 # df = pd.read_csv("dataset/CPIAUCSL.csv")
 df = pd.read_csv("dataset/CPIAUCNS.csv")
 # df.dropna(inplace=True)
