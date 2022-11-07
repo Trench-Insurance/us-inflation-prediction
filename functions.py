@@ -29,8 +29,9 @@ def auto_regression(y_train, y_test):
 
     rmse =  mean_squared_error(y_test, y_pred, squared=True)
     print(f"auto_regression rmse: {rmse}")
-    
-    # auto_regression rmse: 0.0003492280629135441
+
+    return model
+    # auto_regression rmse: 0.06099068252540488
 
 
 def nn_dense():
@@ -45,8 +46,6 @@ def nn_dense():
 
     return model
 
-    # Epoch 50/50
-    # 1031/1031 [==============================] - 1s 1ms/step - loss: 4.3914e-04 - rmse: 0.0210
 
 
 def train(model, x_train, y_train, epochs=50, batch_size=32):
